@@ -72,7 +72,7 @@
                     "type": "shell",
                     "commands": [
                         "mkdir .cargo",
-                        "cp cargo-home/config .cargo/"
+                        "cp cargo/config .cargo/"
                     ]
                 }
             ]

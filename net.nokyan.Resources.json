@@ -1,7 +1,7 @@
 {
     "id": "net.nokyan.Resources",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
@@ -65,8 +65,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.3.0",
-                    "commit": "45da0f97de4de5d2015cffdae7b77ce297be370a"
+                    "tag": "v1.4.0",
+                    "commit": "fd5eba73feff9ae329b484c3d07aade53e3a2f75"
                 },
                 "generated-sources.json",
                 {

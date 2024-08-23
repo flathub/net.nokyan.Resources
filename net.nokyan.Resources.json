@@ -12,8 +12,7 @@
         "--device=dri",
         "--env=G_MESSAGES_DEBUG=none",
         "--env=RUST_BACKTRACE=full",
-        "--env=RUST_LOG=resources=debug",
-        "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/usr/share:/run/host/share:/var/lib/flatpak/exports/share:~/.local/share/flatpak/exports/share:/var/lib/snapd/desktop",
+        "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/usr/share:/run/host/share:/app/local/share:/usr/local/share:/usr/local/share/runtime/share:/run/host/usr/local/share:/run/host/local/share:/var/lib/flatpak/exports/share:~/.local/share/flatpak/exports/share:/var/lib/snapd/desktop",
         "--filesystem=/var/lib/snapd:ro",
         "--filesystem=/var/lib/flatpak/app:ro",
         "--filesystem=/var/lib/flatpak/exports/share:ro",
@@ -65,8 +64,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.5.1",
-                    "commit": "b2bf9053822b50e20eb166d24793e9ec282fc6d8"
+                    "tag": "v1.6.0",
+                    "commit": "f254bcf43fd4d39fddf0169e0f98f59176dff3f9"
                 },
                 "generated-sources.json",
                 {

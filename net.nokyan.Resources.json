@@ -12,6 +12,7 @@
         "--device=dri",
         "--env=G_MESSAGES_DEBUG=none",
         "--env=RUST_BACKTRACE=full",
+        "--env=RUST_LOG=resources=info",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/usr/share:/run/host/share:/app/local/share:/usr/local/share:/usr/local/share/runtime/share:/run/host/usr/local/share:/run/host/local/share:/var/lib/flatpak/exports/share:~/.local/share/flatpak/exports/share:/var/lib/snapd/desktop",
         "--filesystem=/var/lib/snapd:ro",
         "--filesystem=/var/lib/flatpak/app:ro",
@@ -24,7 +25,19 @@
         "--socket=wayland",
         "--talk-name=org.freedesktop.Flatpak"
     ],
-    "cleanup": ["/include", "/lib/pkconfig", "/man", "/share/gtk-doc", "/share/man", "/share/pkgconfig", "*.la", "*.a", "/bin/mold", "/share/doc", "/share/man"],
+    "cleanup": [
+        "/include",
+        "/lib/pkconfig",
+        "/man",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.la",
+        "*.a",
+        "/bin/mold",
+        "/share/doc",
+        "/share/man"
+    ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm18/bin",
         "env": {
@@ -64,8 +77,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.6.0",
-                    "commit": "f254bcf43fd4d39fddf0169e0f98f59176dff3f9"
+                    "tag": "v1.7.0",
+                    "commit": "0782ab582d201074ba3b197e80c563915ef30104"
                 },
                 "generated-sources.json",
                 {

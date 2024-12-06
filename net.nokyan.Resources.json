@@ -24,7 +24,19 @@
         "--socket=wayland",
         "--talk-name=org.freedesktop.Flatpak"
     ],
-    "cleanup": ["/include", "/lib/pkconfig", "/man", "/share/gtk-doc", "/share/man", "/share/pkgconfig", "*.la", "*.a", "/bin/mold", "/share/doc", "/share/man"],
+    "cleanup": [
+        "/include",
+        "/lib/pkconfig",
+        "/man",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.la",
+        "*.a",
+        "/bin/mold",
+        "/share/doc",
+        "/share/man"
+    ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm18/bin",
         "env": {
@@ -64,8 +76,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.6.0",
-                    "commit": "f254bcf43fd4d39fddf0169e0f98f59176dff3f9"
+                    "tag": "v1.7.1",
+                    "commit": "d1fa7dc23c3003a0432c27936e62e51748c94eb2"
                 },
                 "generated-sources.json",
                 {

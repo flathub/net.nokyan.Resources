@@ -1,11 +1,11 @@
 {
     "id": "net.nokyan.Resources",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.llvm18"
+        "org.freedesktop.Sdk.Extension.llvm20"
     ],
     "command": "resources",
     "finish-args": [
@@ -39,7 +39,7 @@
         "/share/man"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm18/bin",
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin",
         "env": {
             "CARGO_HOME": "/run/build/resources/cargo-home",
             "CARGO_REGISTRIES_CRATES_IO_PROTOCOL": "sparse",
@@ -77,8 +77,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.7.1",
-                    "commit": "d1fa7dc23c3003a0432c27936e62e51748c94eb2"
+                    "tag": "v1.8.0",
+                    "commit": "0b0dfbc29b1295211493a4daadb005fa3d8a5555"
                 },
                 "generated-sources.json",
                 {

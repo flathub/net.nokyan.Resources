@@ -1,18 +1,18 @@
 {
     "id": "net.nokyan.Resources",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.llvm20"
+        "org.freedesktop.Sdk.Extension.llvm21"
     ],
     "command": "resources",
     "finish-args": [
         "--device=dri",
         "--env=G_MESSAGES_DEBUG=none",
         "--env=RUST_BACKTRACE=full",
-        "--env=RUST_LOG=resources=info",
+        "--env=RUST_LOG=resources=debug",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/usr/share:/run/host/share:/app/local/share:/usr/local/share:/usr/local/share/runtime/share:/run/host/usr/local/share:/run/host/local/share:/var/lib/flatpak/exports/share:~/.local/share/flatpak/exports/share:/var/lib/snapd/desktop",
         "--filesystem=/var/lib/snapd:ro",
         "--filesystem=/var/lib/flatpak/app:ro",
@@ -21,6 +21,7 @@
         "--filesystem=xdg-data/flatpak/exports/share:ro",
         "--filesystem=host:ro",
         "--share=ipc",
+        "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--talk-name=org.freedesktop.Flatpak"
@@ -39,7 +40,7 @@
         "/share/man"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin",
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin",
         "env": {
             "CARGO_HOME": "/run/build/resources/cargo-home",
             "CARGO_REGISTRIES_CRATES_IO_PROTOCOL": "sparse",
@@ -77,8 +78,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.8.0",
-                    "commit": "0b0dfbc29b1295211493a4daadb005fa3d8a5555"
+                    "tag": "v1.9.0",
+                    "commit": "bfb26939dc1790bc1577e193edbaeaabaf28342f"
                 },
                 "generated-sources.json",
                 {

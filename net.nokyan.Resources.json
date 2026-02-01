@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://git.savannah.nongnu.org/cgit/dmidecode.git/snapshot/dmidecode-3-6.tar.gz",
-                    "sha256": "fe25e4fe567dedf213c5fed0978cb684613ad599d9a50d710476147f58cdb2c1"
+                    "url": "https://download-mirror.savannah.gnu.org/releases/dmidecode/dmidecode-3.6.tar.xz",
+                    "sha256": "e40c65f3ec3dafe31ad8349a4ef1a97122d38f65004ed66575e1a8d575dd8bae"
                 }
             ]
         },
@@ -78,8 +78,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.9.1",
-                    "commit": "715900394e02cb4940247976d9c22936505b48ff"
+                    "tag": "v1.10.0",
+                    "commit": "58aae111e649cb9cf60b616e861f8f2dd7566688"
                 },
                 "generated-sources.json",
                 {

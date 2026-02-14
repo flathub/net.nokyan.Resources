@@ -78,8 +78,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nokyan/resources.git",
-                    "tag": "v1.10.1",
-                    "commit": "811b19aad54de4d5ce20639aa508f1b9454cf014"
+                    "tag": "v1.10.1-1",
+                    "commit": "7725688e8fe4c163886b3da073489a233df92afb"
                 },
                 "generated-sources.json",
                 {
